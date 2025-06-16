@@ -1,0 +1,16 @@
+{
+  "name": "coffeestyle-tailwindcss",
+  "version": "1.0.0",
+  "description": "ducthinh",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./public/output.css --watch"
+  },
+  "keywords": [],
+  "author": "ducthinh",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "tailwindcss": "^4.1.10"
+  }
+}
