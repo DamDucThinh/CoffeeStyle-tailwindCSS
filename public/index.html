@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="../img/favicon/favicon.ico" sizes="16x16">
+    <title>CoffeeStyle</title>
     <link href="./output.css" rel="stylesheet">
 </head>
 <body>
     <div id="root">
-        <div class="content-wrapper max-w-screen-2xl text-base mx-auto px-8 bg-slate-200">
-            <header class="py-6 mx-10">
-                <nav class="flex flex-row justify-between items-center">
+        <div class="content-wrapper font-Karla max-w-screen-2xl text-base mx-auto px-8 bg-slate-200">
+            <header class="py-6 mx-auto">
+                <nav class="flex flex-row justify-between items-center relative">
                     <div class="logo basis-2/6 text-center text-xl font-semibold cursor-pointer">
                         CoffeeStyle.
                     </div>
-                    <ul class="basis-3/6 flex items-center justify-end gap-8 uppercase text-sm text-gray-500 font-medium">
+                    <ul id="dt-top-menu" class="basis-3/6 hidden justify-center lg:flex lg:items-center lg:justify-end lg:gap-8 uppercase text-sm text-gray-500 font-medium">
                         <li class="dt-top-menu-item">
                             <a href="#" class="">Home</a>
                         </li>
@@ -33,11 +34,11 @@
                         <li class="dt-top-menu-item">
                             <a href="#" class="">StyleGuide</a>
                         </li>
-                        <li class="dt-top-menu-item">
+                        <li class="dt-top-menu-item dt-top-menu-item-active">
                             <a href="#" class="">ducthinh</a>
                         </li>
                     </ul>
-                    <ul class="basis-1/6 flex justify-start items-center ml-16 uppercase text-sm text-gray-500 font-medium">
+                    <ul class="basis-3/6 lg:basis-1/6 flex justify-end lg:justify-start items-center ml-16 uppercase text-sm text-gray-500 font-medium">
                         <li class="dt-top-menu-item">
                             <a href="#" class="flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="dt-icon" >
@@ -48,6 +49,13 @@
                             </a>
                         </li>
                     </ul>
+
+
+                    <div class="basis-1/6 flex items-center px-2 cursor-pointer lg:hidden sm:px-3"> <!-- lam responsive den man 375(ipX) -->
+                        <svg id="dt-toggle-top-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="dt-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </div>
                 </nav> 
             </header>
 
@@ -86,5 +94,7 @@
             </footer>
         </div> <!-- End content-wrapper -->
     </div> <!-- End root -->
+
+    <script src="./main.js" type="text/javascript" async></script>
 </body>
 </html>
